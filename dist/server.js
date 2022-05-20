@@ -10,7 +10,6 @@ const routes_1 = require("./routes");
 const port = process.env.SERVER_PORT || 3003;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
-// app.use(cors())
 app.use(routes_1.routes);
 app.listen(port, () => {
     console.log(`listenning at port ${port}`);
